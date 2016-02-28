@@ -1,0 +1,51 @@
+
+
+<div class="content">
+
+    <div class="container no-bottom">
+        <h5 class="uppercase">Transactions</h5>
+        <p>Transactions for the week</p>
+
+
+        <div class="column no-bottom" ng-controller="TransactionsController as txnCtrl">
+            <div id="transaction-list" ></div>
+        </div>
+    </div>
+
+    <div class="decoration"></div>
+    <p class="center-text uppercase footer-text">
+        inVok, Inc Copyright 2016. All rights reserved!
+    </p>
+
+</div>
+
+
+<script type="text/javascript">
+
+    // Get event list from db
+//    $.getJSON( "http://localhost:8080/transactions", function( data ) {
+//        var items = [];
+//
+//        items.push("<tr><th class='table-title'>Location</th><th class='table-title'>Item</th><th class='table-title'>Type</th><th class='table-title'>Qty</th></tr>");
+//
+//        $.each( data, function( key, val ) {
+//
+//            var txnTypeName = val.txnType == "INC" ? "Increase" : "Decrease";
+//            items.push("<tr><td class='table-sub-title'>" + val.locationName + "</td><td>" + val.itemName + "</td><td>" + txnTypeName + "</td><td>" + val.qty + "</td></tr>");
+//
+//        });
+//
+//        $( "<table/>", {
+//            "class": "table",
+//            html: items.join( "" )
+//        }).appendTo( "#transaction-list" );
+//
+////        if (data.length > 5) {
+////            $( "<p><a href='techies-list.html' target='_self' class='button button-light'>Read more</a></p>" ).appendTo("#techies-list-feed");
+////        }
+//
+//    });
+
+
+</script>
+
