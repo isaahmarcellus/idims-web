@@ -6,9 +6,18 @@
         <h5 class="uppercase">Transactions</h5>
         <p>Transactions for the week</p>
 
-
-        <div class="column no-bottom" ng-controller="TransactionsController as txnCtrl">
-            <div id="transaction-list" ></div>
+        <div class="column no-bottom">
+            <div id="transaction-list" >
+                <table  ng-controller="TransactionController">
+                    <tr ng-repeat="transaction in transactions">
+                        <td>{{$index + 1}}</td>
+                        <td>{{transaction.locationName}}</td>
+                        <td>{{transaction.itemName}}</td>
+                        <td>{{transaction.txnType}}</td>
+                        <td>{{transaction.qty}}</td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
 

@@ -1,5 +1,6 @@
 // creating application routing and attaching all necessary dependencies
-var idimsApp = angular.module('idimsApp', [ 'ngRoute', 'idimsApp.controllers', 'idimsApp.directives']);
+var idimsApp = angular.module('idimsApp', [ 'ngRoute', 'idimsApp.controllers', 'idimsApp.directives', 'idimsApp.services']);
+
 
 idimsApp.config(['$routeProvider', function($routeProvider){
         $routeProvider
@@ -8,7 +9,7 @@ idimsApp.config(['$routeProvider', function($routeProvider){
             })
             .when('/transactions', {
                 templateUrl: 'js/app/transactions/transactions.html',
-                controller: 'TransactionsController',
+                controller: 'TransactionController',
                 controllerAs: 'txnCtrl'
             })
             .when('/inventory/remove', {
